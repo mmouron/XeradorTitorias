@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmPrincipal</class>
+ <widget class="QMainWindow" name="frmPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1081</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Asignación de titorías</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnNovoGrupo">
+        <property name="text">
+         <string>Engadir grupo</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCargarDatos">
+        <property name="text">
+         <string>Cargar datos...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnGardarDatos">
+        <property name="text">
+         <string>Gardar datos...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnXerarTitores">
+        <property name="text">
+         <string>Xerar listado de titorías</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1081</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAplicaci_n">
+    <property name="title">
+     <string>Aplicación</string>
+    </property>
+    <addaction name="mnuCargarDatos"/>
+    <addaction name="mnuGardarDatos"/>
+    <addaction name="separator"/>
+    <addaction name="mnuXerarTitores"/>
+    <addaction name="separator"/>
+    <addaction name="mnuSair"/>
+   </widget>
+   <addaction name="menuAplicaci_n"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="mnuCargarDatos">
+   <property name="text">
+    <string>Cargar datos...</string>
+   </property>
+  </action>
+  <action name="mnuGardarDatos">
+   <property name="text">
+    <string>Gardar datos...</string>
+   </property>
+  </action>
+  <action name="mnuXerarTitores">
+   <property name="text">
+    <string>Xerar lista de titores</string>
+   </property>
+  </action>
+  <action name="mnuSair">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
